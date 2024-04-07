@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What are Uyghurs?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1, h2 {
+            font-size: 3em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .essay {
+            display: none;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="intro">
+        <h1>What are <a href="#essay" onclick="showEssay()">Uyghurs</a>?</h1>
+        <p>The Uyghurs are a Turkic ethnic group predominantly residing in the Xinjiang Uyghur Autonomous Region of China. They have a rich history and unique cultural heritage.</p>
+    </div>
+
+    <div id="essay" class="essay">
+        <button onclick="hideEssay()">Back to Intro</button>
+        <h2>The Uyghurs: History and Culture</h2>
+        <p>The Uyghurs, also spelled Uighurs or Uygurs, are a Turkic-speaking ethnic group originating from Central and East Asia. They are primarily located in the Xinjiang Uyghur Autonomous Region of China, which is also known as East Turkestan by Uyghur separatists.</p>
+        
+        <p>The history of the Uyghur people can be traced back to ancient times, with roots in the expansive empires of the Silk Road era. They were influenced by various cultures due to their strategic location along the Silk Road, resulting in a unique blend of Turkic, Persian, Arabic, and Chinese elements in their language, customs, and traditions.</p>
+        
+        <p>The Uyghur language, known as Uyghurche or Uighur Til in their native tongue, belongs to the Turkic language family and is written in an Arabic-derived script known as the Uyghur Arabic alphabet. This script was later replaced by the Latin-based Uyghur alphabet in the early 20th century and then by the current official script, the Uyghur New Script, based on the Arabic script but with modifications.</p>
+        
+        <p>Uyghur culture is rich and diverse, encompassing various forms of art, music, dance, literature, and cuisine. Traditional Uyghur music is characterized by its unique melodies and instruments like the dutar (a long-necked two-stringed lute) and rawap (a plucked string instrument).</p>
+        
+        <p>Historically, the Uyghurs established several powerful empires, including the Uyghur Khaganate in the 8th to 9th centuries and the Kara-Khanid Khanate in the 10th to 12th centuries. These empires played significant roles in the political and cultural landscape of Central Asia.</p>
+        
+        <p>Islam was introduced to the Uyghur people in the 10th century and became the predominant religion among them. Today, the majority of Uyghurs are Sunni Muslims, following the Hanafi school of Islamic jurisprudence.</p>
+        
+        <p>In recent years, the Uyghur population has faced numerous challenges, including cultural assimilation efforts by the Chinese government and allegations of human rights abuses, particularly concerning mass detentions, surveillance, and restrictions on religious and cultural practices.</p>
+        
+        <p>Despite these challenges, the Uyghur people continue to preserve their cultural heritage and identity, striving to maintain their traditions and language amidst ongoing socio-political tensions in the Xinjiang region.</p>
+    </div>
+
+    <script>
+        function showEssay() {
+            document.getElementById('intro').style.display = 'none';
+            document.getElementById('essay').style.display = 'block';
+        }
+        function hideEssay() {
+            document.getElementById('essay').style.display = 'none';
+            document.getElementById('intro').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
